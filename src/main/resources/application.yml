@@ -1,8 +1,9 @@
 logging.level:
-  org.springframework.context: WARN
-  org.springframework.data: WARN
-  org.springframework.jdbc: WARN
-  example: DEBUG
+#  org.springframework.context: WARN
+#  org.springframework.data: WARN
+#  org.springframework.jdbc: WARN
+#  example: DEBUG
+  ROOT: INFO
 
 spring:
 
