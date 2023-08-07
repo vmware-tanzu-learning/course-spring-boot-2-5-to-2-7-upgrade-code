@@ -24,7 +24,7 @@ class CashCardApplicationTests {
     TestRestTemplate restTemplate;
 
     @Test
-    @Disabled
+    //@Disabled
     void shouldReturnACashCardWhenDataIsSaved() {
         ResponseEntity<String> response = restTemplate
                 .withBasicAuth("sarah1", "abc123")
@@ -36,7 +36,7 @@ class CashCardApplicationTests {
         assertThat(id).isEqualTo(99);
 
         Double amount = documentContext.read("$.amount");
-        assertThat(amount).isEqualTo(12.45);
+        assertThat(amount).isEqualTo(123.45);
     }
 
     @Test
