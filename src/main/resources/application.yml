@@ -1,0 +1,17 @@
+logging.level:
+  org.springframework.context: WARN
+  org.springframework.data: WARN
+  org.springframework.jdbc: WARN
+  example: DEBUG
+
+spring:
+
+  mvc:
+    locale: en_US
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    defer-datasource-initialization: true
