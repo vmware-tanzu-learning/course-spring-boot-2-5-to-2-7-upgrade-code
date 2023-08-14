@@ -2,7 +2,6 @@ package example.cashcard;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.ConfigurableBootstrapContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationStartingEvent;
@@ -53,10 +52,4 @@ class MyApplicationStartingEvent extends ApplicationStartingEvent {
 		log.warn("My parent is deprecated!");
 
 	}
-
-	public MyApplicationStartingEvent(ConfigurableBootstrapContext bootstrapContext, SpringApplication application, String[] args) {
-		super(bootstrapContext, application, args);
-		log.info("My parent is Ok!");
-	}
-
 }
