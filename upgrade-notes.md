@@ -22,3 +22,9 @@ _Result:_ code compiles without errors or warnings and all tests pass
 
 - remove hardcoded `lombok` version
 - moved hardcoded `itextpdf` version to <properties>
+
+## Compile the code
+
+- Fix deprecated Application Event listener
+
+_Result:_ code compiles without errors or warnings
