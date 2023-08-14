@@ -28,3 +28,17 @@ _Result:_ code compiles without errors or warnings and all tests pass
 - Fix deprecated Application Event listener
 
 _Result:_ code compiles without errors or warnings
+
+## Upgrade Spring Security Version
+
+- Upgrade Spring Security to `5.8.5`
+- Spring Security deprecations
+  - [INFO] /course-spring-boot-2-5-upgrade-code/src/main/java/example/cashcard/SecurityConfig.java: /course-spring-boot-2-5-upgrade-code/src/main/java/example/cashcard/SecurityConfig.java uses or overrides a deprecated API.
+  - [INFO] /course-spring-boot-2-5-upgrade-code/src/main/java/example/cashcard/SecurityConfig.java
+  - Reference: https://docs.spring.io/spring-security/reference/5.8/migration/index.html
+- Replace `WebSecurityConfigurerAdapter` super class with `SecurityFilterChain` bean definition
+- Replace `antMatcher` with `requestMatcher` builder method
+- Replace `new Pbkdf2PasswordEncoder` with static factory method for Spring Security 5.8
+- Add `@Configuration` annotation, which is removed in Spring Security 6.0
+
+_Result:_ code compiles without errors or warnings
