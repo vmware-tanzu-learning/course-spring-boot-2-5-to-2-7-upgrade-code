@@ -17,3 +17,8 @@ _Result:_ code compiles without errors or warnings and all tests pass
 ## Remove hard-coded Spring/Spring Boot Dependencies
 
 - remove hardcoded `spring-data-jdbc` version
+
+## Update Non Spring/Spring Boot Managed Dependencies
+
+- remove hardcoded `lombok` version
+- moved hardcoded `itextpdf` version to <properties>
