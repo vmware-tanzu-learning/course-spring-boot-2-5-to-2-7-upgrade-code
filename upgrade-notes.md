@@ -13,3 +13,7 @@ _Result:_ code compiles without errors or warnings and all tests pass
 - Compilation error
   - deprecated method signature not found
   - Reference: https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.4-Release-Notes#deprecations-in-spring-boot-24
+
+## Remove hard-coded Spring/Spring Boot Dependencies
+
+- remove hardcoded `spring-data-jdbc` version
