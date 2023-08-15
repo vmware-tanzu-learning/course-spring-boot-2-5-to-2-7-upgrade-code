@@ -42,3 +42,15 @@ _Result:_ code compiles without errors or warnings
 - Add `@Configuration` annotation, which is removed in Spring Security 6.0
 
 _Result:_ code compiles without errors or warnings
+
+## Test - Initial Test Execution
+
+_Result:_ code compiles without errors or warnings and all tests pass
+
+## Test Dependency Housekeeping
+
+- ~~Remove explicit version of `aspectj-core`~~
+- Remove explicit `aspectj-core` dependency
+  - It's managed by `spring-boot-starter-test`
+
+_Result:_ code compiles without errors or warnings and all tests pass
