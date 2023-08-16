@@ -18,7 +18,7 @@ public class CashCardApplication {
 		SpringApplication springApplication = new SpringApplication(CashCardApplication.class);
 		springApplication.addListeners(myApplicationListener);
 
-		// Lesson 2.4 - Eliminate compile errors
+		//  Eliminate compile errors
 		myApplicationListener.onApplicationEvent(new MyApplicationStartingEvent(springApplication, args));
 //		myApplicationListener.onApplicationEvent(new MyApplicationStartingEvent(new DefaultBootstrapContext(), springApplication, args));
 
@@ -45,7 +45,6 @@ class MyApplicationStartingEvent extends ApplicationStartingEvent {
 
 	/**
 	 * This was deprecated in Spring Boot 2.4, removed in 2.6.
-	 * This is an example to be used in Lesson 2.1
 	 *
 	 * @param application
 	 * @param args
@@ -53,7 +52,7 @@ class MyApplicationStartingEvent extends ApplicationStartingEvent {
 	@Deprecated
 	public MyApplicationStartingEvent(SpringApplication application, String[] args) {
 
-		// Lesson 2.4 - This signature has been removed
+		// This signature has been removed in Boot 2.6
 		super(application, args);
 
 		log.warn("My parent is deprecated!");

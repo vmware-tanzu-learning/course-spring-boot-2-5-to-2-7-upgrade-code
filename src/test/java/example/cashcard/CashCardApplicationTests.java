@@ -25,7 +25,7 @@ class CashCardApplicationTests {
 
     @Test
 
-    // Lesson 1.2 - fix broken and disabled tests
+    // fix broken and disabled tests
     @Disabled
     void shouldReturnACashCardWhenDataIsSaved() {
         ResponseEntity<String> response = restTemplate
@@ -39,7 +39,7 @@ class CashCardApplicationTests {
 
         Double amount = documentContext.read("$.amount");
 
-        // Lesson 1.2 - This should test for 123.45
+        // This should test for 123.45
         assertThat(amount).isEqualTo(12.45);
     }
 

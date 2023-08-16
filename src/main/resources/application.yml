@@ -7,7 +7,7 @@ logging.level:
 spring:
 
   mvc:
-    # Lesson 5.1 - deprecated in Spring Boot 2.5, removed in 2.7
+    #  deprecated in Spring Boot 2.5, removed in 2.7
     locale: en_US
 #  web:
 #    locale: en_US

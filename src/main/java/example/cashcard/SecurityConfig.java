@@ -16,15 +16,15 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
-// Lesson 3.1 - add @Configuration, removed in Spring Security 6.0
+// add @Configuration, removed in Spring Security 6.0
 //@Configuration
 @EnableWebSecurity
 
-// Lesson 3.1 - Remove WebSecurityConfigurerAdapter
+// Remove WebSecurityConfigurerAdapter
  public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //public class SecurityConfig {
 
-    // Lesson 3.1 - replace configure method with SecurityFilterChain @Bean
+    // replace configure method with SecurityFilterChain @Bean
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.
@@ -55,7 +55,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        // Lesson 3.1 - replace new passwordEncoder with factory method for version of Spring Security
+        // replace new passwordEncoder with factory method for version of Spring Security
         return new Pbkdf2PasswordEncoder();
 //        return Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_8();
     }
