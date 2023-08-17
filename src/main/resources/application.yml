@@ -7,7 +7,7 @@ logging.level:
 
 spring:
 
-  mvc:
+  web:
     locale: en_US
 
   h2:
