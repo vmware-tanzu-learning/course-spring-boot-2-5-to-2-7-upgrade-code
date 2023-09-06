@@ -79,7 +79,7 @@
 
 			<!--  move explicit version to properties -->
 			<version>5.5.13.3</version>
-<!--			<version>${itexpdf.version}</version>-->
+<!--			<version>${itextpdf.version}</version>-->
 		</dependency>
 
 		<!-- Test dependencies -->

@@ -39,14 +39,10 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 //    @Bean
 //    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        http.authorizeRequests()
+//        http.authorizeHttpRequests()
 //
-//                // Lesson 3.1 - replace AntPathRequestMatcher with .antMatchers
 //                .requestMatchers(new AntPathRequestMatcher("/cashcards/**")).hasRole("CARD-OWNER")
 //                .requestMatchers(new AntPathRequestMatcher("/h2-console/**")).permitAll()
-////                .antMatchers("/cashcards/**").hasRole("CARD-OWNER")
-////                .antMatchers("/h2-console/**").permitAll()
-//
 //                .and()
 //                .csrf().disable()
 //                .httpBasic();
