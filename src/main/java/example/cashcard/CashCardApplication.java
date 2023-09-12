@@ -1,5 +1,7 @@
 package example.cashcard;
 
+import java.util.Calendar;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.ConfigurableBootstrapContext;
@@ -8,6 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationStartingEvent;
 import org.springframework.context.ApplicationListener;
+import javax.xml.bind.DatatypeConverter;
 
 @SpringBootApplication
 public class CashCardApplication {
@@ -44,6 +47,7 @@ class MyApplicationStartingEvent extends ApplicationStartingEvent {
 	public MyApplicationStartingEvent(ConfigurableBootstrapContext bootstrapContext, SpringApplication application, String[] args) {
 		super(bootstrapContext, application, args);
 		log.info("My parent is Ok!");
+		log.info("application start time is " + DatatypeConverter.printDate(Calendar.getInstance()));
 	}
 
 }
