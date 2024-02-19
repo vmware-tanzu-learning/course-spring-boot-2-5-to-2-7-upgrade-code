@@ -2,6 +2,8 @@ HELP.md
 
 #### open-rewrite
 .rewrite-cache/
+spring-boot-migrator.jar
+spring-boot-migrator.log
 
 ### Gradle ###
 .gradle
