@@ -1,5 +1,8 @@
 HELP.md
 
+#### open-rewrite
+.rewrite-cache/
+
 ### Gradle ###
 .gradle
 build/
